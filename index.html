@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JS_Buoi-02</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <div class="menu">
+            <div class="menu-item">
+                <a href="#sub" class="title" id="link">
+                    <i class="fa-solid fa-book"></i>
+                    Bài 1
+                </a>
+                <div class="sub-menu" id="sub">
+                    <div class="topic">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                        Tính tiền lương nhân viên
+                    </div>
+                    <div class="rec">
+                        <p>
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <strong>Gợi ý:</strong>
+                        </p>
+                        <p>Công thức: Lương = Lương 1 ngày * số ngày làm</p>
+                        <p>Kiến thức áp dụng:</p>
+                        <ul>
+                            <li>Tìm tới thẻ và lấy giá trị</li>
+                            <li>Tạo hàm cơ bản</li>
+                            <li>Gắn sự kiện click cho button</li>
+                            <li>Thay đổi nội dung cho thẻ</li>
+                            <li>Xử lý load trang với button của form</li>
+                        </ul>
+                    </div>
+                    <form action="">
+                        <div class="row">
+                            <input id="spd" type="text" placeholder="Nhập lương một ngày">
+                            <input id="days" type="text" placeholder="Số ngày làm">
+                        </div>
+                        <button onclick="salary()">Tính Lương</button>
+                    </form>
+
+                    <div class="display">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <span class="result" id="rs">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <a href="#sub-2" class="title">
+                    <i class="fa-solid fa-book"></i>
+                    Bài 2
+                </a>
+                <div class="sub-menu" id="sub-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae, maiores?
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <a href="#sub-3" class="title">
+                    <i class="fa-solid fa-book"></i>
+                    Bài 3
+                </a>
+                <div class="sub-menu" id="sub-3">
+                    Lorem 
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <a href="#sub-4" class="title">
+                    <i class="fa-solid fa-book"></i>
+                    Bài 4
+                </a>
+                <div class="sub-menu" id="sub-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <a href="#sub-5" class="title">
+                    <i class="fa-solid fa-book"></i>
+                    Bài 5
+                </a>
+                <div class="sub-menu" id="sub-5">
+                    Lorem ipsum dolor sit amet consectetur 
+                </div>
+            </div>
+        </div>
+        <script src="./assets/js/index.js"></script>
+    </body>
+</html>
