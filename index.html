@@ -45,15 +45,23 @@
                     </div>
                     <form action="">
                         <div class="row">
-                            <input id="spd" type="text" placeholder="Nhập lương một ngày">
-                            <input id="days" type="text" placeholder="Số ngày làm">
+                            <input
+                                id="spd"
+                                type="text"
+                                placeholder="Nhập lương một ngày"
+                            />
+                            <input
+                                id="days"
+                                type="text"
+                                placeholder="Số ngày làm"
+                            />
                         </div>
-                        <button onclick="salary()">Tính Lương</button>
+                        <button onclick="salary()">Tính lương</button>
                     </form>
 
                     <div class="display">
                         <i class="fa-solid fa-arrow-right"></i>
-                        <span class="result" id="rs">0</span>
+                        <span class="result-salary" id="rs-salary">0</span>
                     </div>
                 </div>
             </div>
@@ -64,8 +72,60 @@
                     Bài 2
                 </a>
                 <div class="sub-menu" id="sub-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Recusandae, maiores?
+                    <div class="topic">
+                        <i class="fa-brands fa-slack"></i>
+                        Tính giá trị trung bình
+                    </div>
+                    <div class="rec">
+                        <p>
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <strong>Gợi ý:</strong>
+                        </p>
+                        <p>Kiến thức áp dụng:</p>
+                        <ul>
+                            <li>Tìm tới thẻ và lấy giá trị</li>
+                            <li>Tạo hàm cơ bản</li>
+                            <li>Gắn sự kiện click cho button</li>
+                            <li>Thay đổi nội dung cho thẻ</li>
+                            <li>Xử lý load trang với button của form</li>
+                            <li>Xử lý ép kiểu dữ liệu</li>
+                        </ul>
+                    </div>
+                    <form action="">
+                        <div class="row">
+                            <input
+                                id="sth1"
+                                type="text"
+                                placeholder="Nhập số thứ 1"
+                            />
+                            <input
+                                id="sth2"
+                                type="text"
+                                placeholder="Nhập số thứ 2"
+                            />
+                            <input
+                                id="sth3"
+                                type="text"
+                                placeholder="Nhập số thứ 3"
+                            />
+                            <input
+                                id="sth4"
+                                type="text"
+                                placeholder="Nhập số thứ 4"
+                            />
+                            <input
+                                id="sth5"
+                                type="text"
+                                placeholder="Nhập số thứ 5"
+                            />
+                        </div>
+                        <button onclick="average()">Tính trung bình</button>
+                    </form>
+
+                    <div class="display">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <span class="result-average" id="rs-average">0</span>
+                    </div>
                 </div>
             </div>
 
@@ -75,7 +135,45 @@
                     Bài 3
                 </a>
                 <div class="sub-menu" id="sub-3">
-                    Lorem 
+                    <div class="topic">
+                        <i class="fa-solid fa-arrows-spin"></i>
+                        Quy đổi tiền
+                    </div>
+                    <div class="rec">
+                        <p>
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <strong>Gợi ý:</strong>
+                        </p>
+                        <p>Kiến thức áp dụng:</p>
+                        <ul>
+                            <li>Áp dụng các kiến thức như bài 1 và 2</li>
+                            <li>Giá USD mặc định 1 USD = 23500</li>
+                            <li>
+                                Có thể dùng thêm NumberFormat để số tiền hiển
+                                thị đẹp hơn: NumberFormat
+                                <div>
+                                    VD: new
+                                    Intl.NumberFormat('vn-VN').format(23500); =>
+                                    23,500
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <form action="">
+                        <div class="row">
+                            <input
+                                id="usd"
+                                type="text"
+                                placeholder="Nhập số tiền USD"
+                            />
+                        </div>
+                        <button onclick="exchange()">Quy đổi tiền</button>
+                    </form>
+
+                    <div class="display">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <span class="result-exchange" id="rs-exchange">0</span>
+                    </div>
                 </div>
             </div>
 
@@ -85,8 +183,45 @@
                     Bài 4
                 </a>
                 <div class="sub-menu" id="sub-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Recusandae
+                    <div class="topic">
+                        <i class="fa-solid fa-chart-area"></i>
+                        Tính diện tích, chu vi hình chữ nhật
+                    </div>
+                    <div class="rec">
+                        <p>
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <strong>Gợi ý:</strong>
+                        </p>
+                        <p>Kiến thức áp dụng:</p>
+                        <ul>
+                            <li>Áp dụng các kiến thức như các bài trước</li>
+                            <li>Diện tích: dài x rộng</li>
+                            <li>Chu vi: (dài + rộng) x 2</li>
+                        </ul>
+                    </div>
+                    <form action="">
+                        <div class="row">
+                            <input
+                                id="length"
+                                type="text"
+                                placeholder="Nhập chiều dài"
+                            />
+                            <input
+                                id="width"
+                                type="text"
+                                placeholder="Nhập chiều rộng"
+                            />
+                        </div>
+                        <button onclick="area()">Quy đổi tiền</button>
+                    </form>
+
+                    <div class="display">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <span style="color: rgba(100, 100, 100, 0.8)">Diện tích: </span>
+                        <span class="result-area" id="rs-area">0</span>
+                        <span style="color: rgba(100, 100, 100, 0.8)">|| Chu vi: </span>
+                        <span class="result-perimeter" id="rs-perimeter">0</span>
+                    </div>
                 </div>
             </div>
 
@@ -96,7 +231,35 @@
                     Bài 5
                 </a>
                 <div class="sub-menu" id="sub-5">
-                    Lorem ipsum dolor sit amet consectetur 
+                    <div class="topic">
+                        <i class="fa-solid fa-barcode"></i>
+                        Tính tổng 2 ký số
+                    </div>
+                    <div class="rec">
+                        <p>
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <strong>Gợi ý:</strong>
+                        </p>
+                        <p>Kiến thức áp dụng:</p>
+                        <ul>
+                            <li>Áp dụng các kiến thức như các bài trước</li>
+                        </ul>
+                    </div>
+                    <form action="">
+                        <div class="row">
+                            <input
+                                id="num"
+                                type="text"
+                                placeholder="Nhập số có 2 chữ số"
+                            />
+                        </div>
+                        <button onclick="sum()">Tính tổng</button>
+                    </form>
+
+                    <div class="display">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <span class="result-sum" id="rs-sum">0</span>
+                    </div>
                 </div>
             </div>
         </div>
