@@ -50,7 +50,7 @@ body {
     transition: all 0.3s;
 }
 
-.menu-item:hover .title {
+.menu-item:hover .title, .active-title {
     background-color: #ff3cac;
     background-image: linear-gradient(
         25deg,
